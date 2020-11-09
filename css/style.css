@@ -1,0 +1,124 @@
+/*mobile first*/
+@media screen and (min-width: 750px){
+
+  body{
+      font-family: sans-serif;
+      color: goldenrod;
+      margin: 0;
+      padding: 0;
+      font-size: 12pt; 
+      background-color: gray;
+      background-size: contain;
+        }
+  header{
+      background-attachment: fixed; /* Parallax effect */     
+      background-position: center;  /* Parallax effect */
+      background-repeat: no-repeat; /* Parallax effect */
+      background-size: cover;       /* Parallax effect */
+      color: white;
+      height: 25px;                /* Parallax effect */
+      background-image:url("../images/ollivanders_cartoon.jpg");
+      grid-column: 1 / -1;  /*Can you explain what this does?*/
+      grid-row: 1 / auto;   /*Can you rewrite it?*/
+        }
+  footer{
+      background-color: goldenrod;
+      color: white;
+      padding: 10px;
+      text-align: center;
+        }
+  h1{
+      font-size: 2em;
+      text-align: center;
+      line-height: 2;
+        }
+  h2{
+      font-size: 1.5em;
+      text-align: center;
+      padding: 5px;
+        }
+  p{
+      padding: 0 10px;
+    }
+  /*price page*/
+.price-text-block{
+      background-color: rgba(92, 83, 83, 0.8);
+      max-width: 100px;
+      max-height: 200px;
+      border: 1px solid rgb(171, 173, 6);
+      padding: 10px;
+}
+
+
+  /*attention page*/
+.attention_container{
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-row-gap:50px;
+  }
+.attention-text-block{
+      background-color: rgba(92, 83, 83, 0.8);
+      max-width: 300px;
+      min-height: 300px;
+      border: 2px solid black;
+      padding: 10px;
+      }
+.p_1{
+      grid-row: 1;
+      grid-column: 1/span2;
+      }
+.p_2{
+      grid-row: 2;
+      grid-column: 2/span2;
+      }
+.p_3{
+      grid-row: 3;
+      grid-column: 1/span2;
+      }
+.p_4{
+      grid-row: 4;
+      grid-column: 2/span2;
+      }
+
+  /*wands wood page*/
+.wand-text-block{
+      background-color: rgba(92, 83, 83, 0.8);
+      max-width: 300px;
+      min-height: 300px;
+      border: 2px solid black;
+      padding: 10px;
+  }
+}
+
+
+/*nav bars*/
+nav a{
+  color: black;
+  font-weight: bold;
+}
+nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  font-size: larger;
+}
+nav a:active{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  font-size: larger;
+}
+
+#index_nav{
+  font-size: larger;
+
+}
+#wands_nav{
+  font-size: larger;
+}
+#pricing_nav{
+  font-size: larger;
+}
+#attentions_nav{
+  font-size: larger;
+}
